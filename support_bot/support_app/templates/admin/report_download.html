@@ -1,0 +1,27 @@
+{% extends "admin/change_list.html" %}
+{% block content %}
+  <h2>Скачать отчет по заявкам</h2>
+  <form method="get" action="{% url 'admin:support_app_ahorequest_download-report' %}">
+    <label for="month">Месяц:</label>
+        <select id="month" name="month" required>
+            <option value="1">Январь</option>
+            <option value="2">Февраль</option>
+            <option value="3">Март</option>
+            <option value="4">Апрель</option>
+            <option value="5">Май</option>
+            <option value="6">Июнь</option>
+            <option value="7">Июль</option>
+            <option value="8">Август</option>
+            <option value="9">Сентябрь</option>
+            <option value="10" selected>Октябрь</option> <!-- Октябрь по умолчанию -->
+            <option value="11">Ноябрь</option>
+            <option value="12">Декабрь</option>
+        </select>
+
+        <label for="year">Год:</label>
+        <input type="number" id="year" name="year" value="{{ current_year }}" required>
+
+        <button type="submit">Скачать отчет</button>
+  </form>
+  {{ block.super }}
+{% endblock %}

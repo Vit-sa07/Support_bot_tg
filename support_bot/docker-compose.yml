@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/app
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    ports:
+      - "8001:8000"
+    environment:
+      - DEBUG=1
+      - TZ=Europe/Moscow
+    restart: unless-stopped
+
+  bot:
+    build: .
+    command: sh -c "python support_app/bot.py"
+    volumes:
+      - .:/app
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    depends_on:
+      - web
+    environment:
+      - TZ=Europe/Moscow
+    restart: unless-stopped
+
