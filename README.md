@@ -11,7 +11,7 @@
 #### Установка и запуск:
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/your-username/support-requests-bot.git
+   git clone https://github.com/Vit-sa07/Support_bot_tg.git
    ```
 
 2. Установите зависимости:
@@ -60,7 +60,7 @@ This project is a multifunctional Telegram bot designed for customer support, en
 #### Installation and Setup:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/support-requests-bot.git
+   git clone https://github.com/Vit-sa07/Support_bot_tg.git
    ```
 
 2. Install the dependencies:
