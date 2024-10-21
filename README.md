@@ -1,7 +1,3 @@
-### Описание для Git на русском:
-
-#### Название проекта: **Support Requests Bot**
-
 Проект представляет собой многофункционального Telegram-бота для поддержки клиентов, с возможностью создания заявок в отдел ИТ и АХО, отслеживания их статусов, а также взаимодействия со специалистами поддержки. Бот позволяет клиентам отправлять заявки, специалистам управлять их статусами, а администраторам генерировать отчеты по заявкам. Реализована интеграция с базой данных для хранения заявок и пользователей.
 
 #### Основные возможности:
@@ -49,14 +45,7 @@
    docker-compose up --build
    ```
 
-#### Лицензия:
-Этот проект распространяется под лицензией MIT. Ознакомьтесь с файлом `LICENSE` для подробностей.
-
 ---
-
-### Description for Git in English:
-
-#### Project Name: **Support Requests Bot**
 
 This project is a multifunctional Telegram bot designed for customer support, enabling the creation of requests for IT and facility management (AHO) departments, tracking request statuses, and interaction with support specialists. The bot allows clients to submit requests, specialists to manage statuses, and administrators to generate reports. The bot integrates with a database to store requests and user information.
 
@@ -104,6 +93,3 @@ This project is a multifunctional Telegram bot designed for customer support, en
    ```bash
    docker-compose up --build
    ```
-
-#### License:
-This project is licensed under the MIT License. See the `LICENSE` file for details.
